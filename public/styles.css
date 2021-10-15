@@ -64,4 +64,32 @@ div.login-top a{
 }
 .input-class{
     width:480px;
+    height:auto;
+    padding:8px;
+    border-radius: 12px;
+    outline:1px rgba(0,0,0,1);
+    border: 1px solid rgba(136, 136, 136, 0.719);
+    font-family:inherit;
+    font-size:20px;
+    color:rgba(136, 136, 136, 0.719);
+    margin: 8px 0 24px 0;
+}
+.button-class{
+    font-family:inherit;
+    font-size: 20px;
+    background-color:rgb(76, 43, 226);
+    padding:12px;
+    border-radius: 30px;
+    color:#fff;
+    cursor:pointer;
+    margin:0;
+    font-weight: lighter;
+    border:none;
+}
+.button--login{
+    width: 120px;
+}
+.button--signup{
+    margin-top:30px;
+    width: 480px;
 }
