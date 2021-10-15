@@ -1,4 +1,4 @@
-body,h1,h2,section{
+body,h1,h2,section,div{
     margin: 0;
 }
 
@@ -8,12 +8,38 @@ body{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-section.login-top{
-
+section.login-left{
+    display:flex;
+    float:left;
+    height:51vw;
+    position:relative;
+    user-select:none;
 }
-section.LoginLeftIMG{
-    
+section.login-right{
+    display:block;
+    float:right;
+    width:72%;
+    height:51vw;
+    position:relative;
+    user-select:none;
 }
-section.LoginMain{
-    
+div.login-top{
+    display:block;
+    float:right;
+    position:relative;
+    text-align:right;
+    user-select:none;
+    overflow:hidden;
+    padding:32px;
+    height:4%;
+    width:auto;
+    background-color:antiquewhite;
+}
+div.login-top a{
+    font-size:24px;
+    margin-right:20px;
+}
+div.loginMain{
+    position:relative;
+    float:left;
 }
