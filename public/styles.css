@@ -14,14 +14,16 @@ section.login-left{
     height:51vw;
     position:relative;
     user-select:none;
+    z-index:1;
 }
 section.login-right{
     display:block;
     float:right;
-    width:72%;
+    width:68vw;
     height:51vw;
     position:relative;
     user-select:none;
+    z-index:0;
 }
 div.login-top{
     display:block;
@@ -32,14 +34,34 @@ div.login-top{
     overflow:hidden;
     padding:32px;
     height:4%;
-    width:auto;
-    background-color:antiquewhite;
+    width:100%;
 }
 div.login-top a{
     font-size:24px;
     margin-right:20px;
 }
-div.loginMain{
+.login-form{
     position:relative;
     float:left;
+    margin-left:20%;
+}
+.login-form>H1{
+    font-size:48px;
+    margin-bottom:0px;
+}
+.login-form>H2{
+    margin-top:12px;
+    font-size:32px;
+    color:grey;
+    font-weight:normal;
+}
+.login-form>H3{
+    margin-top:12px;
+    font-size:16px;
+    color:grey;
+    font-weight:bold;
+    cursor:pointer;
+}
+.input-class{
+    width:480px;
 }
