@@ -83,6 +83,16 @@ div.login-top a{
     color:rgba(136, 136, 136, 0.719);
     margin: 8px 0 24px 0;
 }
+.input-class--active{
+    color:black;
+    font-weight: bold;
+    background-color: white;
+    border-color:rgb(118, 72, 226);
+}
+.input-class--error{
+    background-color:rgba(228, 52, 52, 0.248);
+    border-color:rgba(228, 52, 52, 1);
+}
 .button-class{
     font-family:inherit;
     font-size: 20px;
@@ -101,4 +111,34 @@ div.login-top a{
 .button--signup{
     margin-top:30px;
     width: 480px;
+}
+.modal{
+    position:absolute;
+    display:block;
+    height:100px;
+    width:400px;
+    background-color:#efefef;
+    text-align:center;
+    font-size:32px;
+    margin:0 auto;
+    padding-top:15px;
+    outline: 2px solid rgb(76, 43, 226);
+    border-radius:24px;
+    box-shadow: 2px 2px 40px 10px lightgrey;
+    top:-12%;
+    right:20%;
+    color:#545454;
+    text-shadow: 1px 1px 20px grey;
+}
+.external-account{
+    display:inline;
+    background-color:none;
+    width:45px;
+    height:45px;
+    float:left;
+    margin-right:20px;
+    cursor:pointer;
+}
+.external-account>a>img{
+    width:100%;
 }

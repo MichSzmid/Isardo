@@ -12,7 +12,7 @@
 <section class="login-left">
     <img src="../images/loginposter.png" alt="loginImageMainposter" draggable="false"/>
 </section>
-<section class="login-right">
+<section class="login-right" ID="login-right">
     <div class="login-top">
         <a class="loginFont">Already have and account?</a>
         <button class="button-class button--login" ID="LogInButton">Log In</button>
@@ -21,15 +21,18 @@
         <h1>Welcome do Isardo!</h1>
         <h2>Register your account</h1>
             <a>Name</a></br>
-            <input class="input-class" type="text" placeholder="e.g. John"/></br>
+            <input class="input-class" type="text" name="login1Name" placeholder="e.g. John"/></br>
             <a>Last name</a></br>
-            <input class="input-class" type="text" placeholder="e.g. Doe"/></br>
+            <input class="input-class" type="text" name="login2Last" placeholder="e.g. Doe"/></br>
             <a>E-mail</a></br>
-            <input class="input-class" type="email" placeholder="ex. johndoe@yahoo.com"/></br>
+            <input class="input-class" type="email" name="login3Email" placeholder="ex. johndoe@yahoo.com"/></br>
             <a>Password</a></br>
-            <input class="input-class" type="password" placeholder="Enter your password"/></br>
+            <input class="input-class" type="password" name="login4Password" placeholder="Enter your password"/></br>
             <button class="button-class button--signup" ID="SignUpButton">Sign Up</button>
             <h3>or create account with</h3>
+            <div class="external-account"><a><img src="../images/icons/external1Google.png"/></a></div>
+            <div class="external-account"><a><img src="../images/icons/external2icloud.png"/></a></div>
+            <div class="external-account"><a><img src="../images/icons/external3fb.png"/></a></div>
             </form>
 </section>
 <script src="../src/index.js"></script>
