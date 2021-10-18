@@ -2,14 +2,15 @@ const html = document.documentElement;
 
 const LoginForm = document.querySelector("#LoginMain")
 
-var modal = document.createElement('div');
+/*creation of modal whowing up after register*/
+var modal = document.createElement('div'); 
 modal.textContent="New account has been created!/n Check Your email.";
 modal.setAttribute('class','modal visible');
+
 function RegisteredModal(){
     LoginForm.appendChild(modal);
    setTimeout(function(){LoginForm.removeChild(modal)},5000);
 };
-
 
 LoginForm.addEventListener('input',function(e){
         if(e.currentTarget.login1Name.value!==""){
@@ -29,7 +30,8 @@ LoginForm.addEventListener('input',function(e){
         e.currentTarget.login4Password.classList.remove('input-class--error')
         }else {e.currentTarget.login4Password.classList.remove("input-class--active")}
 });/*form input textfield "activation" on input, error removed (added by next function if it was empty) and added*/
-    LoginForm.addEventListener("submit", function(e){
+    
+LoginForm.addEventListener("submit", function(e){
         e.preventDefault();
         if(e.currentTarget.login1Name.value &&
              e.currentTarget.login2Last.value &&
@@ -54,5 +56,4 @@ LoginForm.addEventListener('input',function(e){
         if(e.currentTarget.login4Password.value===""){
             e.currentTarget.login4Password.classList.add('input-class--error');
         }/*Checks if input is corrent and not empty then adds error class specified in styles*/
-    });
-    /*<div class="modal">New account has been created!/n Check Your email.</div>*/
+});

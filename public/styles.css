@@ -62,7 +62,6 @@ div.login-top a{
     font-size:16px;
     color:grey;
     font-weight:bold;
-    cursor:pointer;
 }
 .login-form a{
     color: black;
@@ -141,4 +140,77 @@ div.login-top a{
 }
 .external-account>a>img{
     width:100%;
+}
+
+/* ==== Students interface ==== */
+section.ui-body {
+    position:absolute;
+    background-color:#f8f9fd;
+    width:100%;
+    Height:100%;
+    user-select:none;
+}
+.text-main {
+    float:left;
+    margin: 20px 40px 40px 40px;
+    font-family:inherit;
+    font-size:42px;
+    font-weight: bold;
+}
+div.navigation>ul>li{
+    display:inline;
+    float:left;
+    position:relative;
+    list-style: none;
+    margin: 0 20px 0 0;
+    padding: 13px 0 0 0;
+}
+.navigation-button{
+    display:block;
+    width:120px;
+    font-size:28px;
+    font-weight:600;
+    cursor:pointer;
+    color:#656565;
+    transition:0.5s;
+}
+.navigation-button--hover{
+    color:#8f6fca;
+    text-shadow: 1px 1px 10px #afa4c5;
+    transition:0.2s;
+}
+.navigation-button--active{
+    color:rgb(76, 43, 226);
+}
+.navigation-button__indicator{
+    display:none;
+    position:absolute;
+    content:"";
+    width:40px;
+    height:4px;
+    border-radius:20%;
+    right:48%;
+    text-align: center;
+    background-color:rgb(76, 43, 226);
+}
+div.user-panel{
+    display:flex;
+    float:right;
+    padding:10px;
+    margin: 20px 40px 40px 0;
+}
+.user-panel>.user-panel--icon{
+    height:45px;
+    width:45px;
+    border-radius:50%;
+    overflow:hidden;
+    cursor:pointer;
+    text-align: center;
+    margin:12px 32px 0 0;
+}
+.user-panel>.user-panel--icon>img{
+    display:inline;
+    height:80%;
+    width:80%;
+    margin-top: 4px;
 }
