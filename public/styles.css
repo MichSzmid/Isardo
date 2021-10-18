@@ -145,7 +145,7 @@ div.login-top a{
 /* ==== Students interface ==== */
 section.ui-body {
     position:absolute;
-    background-color:#f8f9fd;
+    background-color:#F4F4F4;
     width:100%;
     Height:100%;
     user-select:none;
@@ -197,20 +197,58 @@ div.user-panel{
     display:flex;
     float:right;
     padding:10px;
-    margin: 20px 40px 40px 0;
+    margin: 0px 40px 40px 0;
 }
-.user-panel>.user-panel--icon{
+.user-panel>.user-panel-icon{
     height:45px;
     width:45px;
     border-radius:50%;
     overflow:hidden;
     cursor:pointer;
     text-align: center;
-    margin:12px 32px 0 0;
+    margin:8px 32px 0 0;
 }
-.user-panel>.user-panel--icon>img{
+.user-panel>.user-panel-icon>img{
     display:inline;
     height:80%;
     width:80%;
     margin-top: 4px;
+}
+.user-panel-menu--min>div{
+    height:60px;
+    width: 60px;
+    border-radius:50%;
+    overflow:hidden;
+    cursor:pointer;
+    text-align: center;
+    margin:2px 0px 0 0;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.348);
+}
+.user-panel-menu--min>div>img{
+    display:block;
+    width:120%;
+    margin-top: -12px;
+    position:relative;
+    float:left;
+}
+.user-panel-menu--min>img{
+    display:inline;
+    position:relative;
+    padding:0;
+    margin: 0 auto;
+    top:-50%;
+    right:-50%;
+    width:30px;
+    height:auto;
+    float:right;
+}
+section.main-ui-section{
+    position:absolute;
+    background:white;
+    left:2%;
+    top:16%;
+    width:94%;
+    height:77%;
+    border-radius: 40px;
+    padding:20px;
 }
