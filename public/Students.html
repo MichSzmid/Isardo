@@ -31,7 +31,7 @@
         <input type="text" class="input-class input-class--search" placeholder="Search"/>
     </div>
     <div class="students-list">
-        <table class="students-table">
+        <table class="students-table students-table--full">
         <thead>
             <tr>
                 <th></th>
@@ -50,12 +50,14 @@
                 <td><a class="student-data--subject">English</a></td>
             </tr>
             <tr>
-                <td><div class="user-image-circle">
+                <td>
+                    <div class="user-image-circle">
                         <img src="../images/users/user1.jpg" draggable="false"/>
-                    </div> </td>
-                <td><a class="student-data--name">Anna Krótkie</a></td>
-                <td><a class="student-data--email">anna.krotkie@gmail.com</a></td>
-                <td><a class="student-data--subject">English</a></td>
+                    </div>
+                </td>
+                <td><a class="student-data--name">Jan Kowalski</a></td>
+                <td><a class="student-data--email">jan.kowalski@gmail.com</a></td>
+                <td><a class="student-data--subject">Japanese</a></td>
             </tr>
             <tr>
                 <td><div class="user-image-circle">
@@ -63,92 +65,20 @@
                 </div> </td>
                 <td><a class="student-data--name">Katarzyna Bardzodługienazwisko</a></td>
                 <td><a class="student-data--email">katarzyna.bardzodlugienazwisko@gmail.com</a></td>
-                <td><a class="student-data--subject">English</a></td>
-            </tr>
-            <tr>
-                <td><div class="user-image-circle">
-                    <img src="../images/users/user1.jpg" draggable="false"/>
-                </div> </td>
-                <td><a class="student-data--name">Anna Krótkie</a></td>
-                <td><a class="student-data--email">anna.krotkie@gmail.com</a></td>
-                <td><a class="student-data--subject">English</a></td>
-            </tr
-            ><tr>
-                <td><div class="user-image-circle">
-                    <img src="../images/users/user2.jpg" draggable="false"/>
-                </div> </td>
-                <td><a class="student-data--name">Katarzyna Bardzodługienazwisko</a></td>
-                <td><a class="student-data--email">katarzyna.bardzodlugienazwisko@gmail.com</a></td>
                 <td><a class="student-data--subject">Spanish</a></td>
             </tr>
-            <tr>
-                <td><div class="user-image-circle">
-                    <img src="../images/users/user3.jpg" draggable="false"/>
-                </div> </td>
-                <td><a class="student-data--name">Anna Krótkie</a></td>
-                <td><a class="student-data--email">anna.krotkie@gmail.com</a></td>
-                <td><a class="student-data--subject">English</a></td>
-            </tr>
-            <tr>
-                <td><div class="user-image-circle">
-                    <img src="../images/users/user1.jpg" draggable="false"/>
-                </div> </td>
-                <td><a class="student-data--name">Katarzyna Bardzodługienazwisko</a></td>
-                <td><a class="student-data--email">katarzyna.bardzodlugienazwisko@gmail.com</a></td>
-                <td><a class="student-data--subject">English</a></td>
-            </tr>
-            <tr>
-                <td><div class="user-image-circle">
-                    <img src="../images/users/user2.jpg" draggable="false"/>
-                </div> </td>
-                <td><a class="student-data--name">Anna Krótkie</a></td>
-                <td><a class="student-data--email">anna.krotkie@gmail.com</a></td>
-                <td><a class="student-data--subject">Spanish</a></td>
-            </tr>
-            <tr>
-                <td><div class="user-image-circle">
-                    <img src="../images/users/user3.jpg" draggable="false"/>
-                </div> </td>
-                <td><a class="student-data--name">Katarzyna Bardzodługienazwisko</a></td>
-                <td><a class="student-data--email">katarzyna.bardzodlugienazwisko@gmail.com</a></td>
-                <td><a class="student-data--subject">English</a></td>
-            </tr>
-            <tr>
-                <td><div class="user-image-circle">
-                    <img src="../images/users/user1.jpg" draggable="false"/>
-                </div> </td>
-                <td><a class="student-data--name">Anna Krótkie</a></td>
-                <td><a class="student-data--email">anna.krotkie@gmail.com</a></td>
-                <td><a class="student-data--subject">Spanish</a></td>
-            </tr>
-            <tr>
-                <td><div class="user-image-circle">
-                    <img src="../images/users/user2.jpg" draggable="false"/>
-                </div> </td>
-                <td><a class="student-data--name">Katarzyna Bardzodługienazwisko</a></td>
-                <td><a class="student-data--email">katarzyna.bardzodlugienazwisko@gmail.com</a></td>
-                <td><a class="student-data--subject">Spanish</a></td>
-            </tr>
-            <tr>
-                <td><div class="user-image-circle">
-                    <img src="../images/users/user3.jpg" draggable="false"/>
-                </div> </td>
-                <td><a class="student-data--name">Anna Krótkie</a></td>
-                <td><a class="student-data--email">anna.krotkie@gmail.com</a></td>
-                <td><a class="student-data--subject">English</a></td>
-            </tr>
+        
         </tbody>
     </table>
     </div>
     <div class="students-sheet"><a class="Exit">X</a>
-        <div class="user-image-circle students-sheet-image">
+        <div class="user-image-circle students-sheet--image">
             <img src="../images/users/user2.jpg" draggable="false"/>
         </div>
         <div class="students-sheet--name"><a>Anna Krótkie</a></div>
-        <div class="students-sheet--contact">
-            <a>anna.krotkie@gmail.com</a><br/>
-            <a>606 623 235</a>
-        </div>
+        <div class="students-sheet--mail"><a>anna.krotkie@gmail.com</a></div>
+        <div class="students-sheet--tel"><a>606 623 235</a></div>
+          
         <div class="students-sheet--edit"><img src="../images/icons/edit.png" alt="Edit" title="Edit student's data"/></div>
         <div class="students-sheet__overview">Overview</div>
     </div>

@@ -335,7 +335,7 @@ div.students-sheet{
     box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.26);
     transition:0.2s;
 }
-.students-sheet-image{
+.students-sheet--image{
     height:150px;
     width:150px;
     margin:0 auto;
@@ -345,7 +345,7 @@ div.students-sheet{
     margin-top:20px;
     box-shadow: 0 0 8px darkgrey;
 }
-.students-sheet-image>img{
+.students-sheet--image>img{
     position:relative;
     height:160%;
     top:-20%;
@@ -362,13 +362,13 @@ div.students-sheet{
     font-size:30px;
     font-weight:bold;
 }
-.students-sheet--contact{
+.students-sheet--mail,.students-sheet--tel {
     display:block;
     width:100%;
     cursor:unset;
     text-align:center;
 }
-.students-sheet--contact>a{
+.students-sheet--mail>a,.students-sheet--tel>a{
     font-family: inherit;
     font-size:16px;
     color:rgb(160, 160, 160);

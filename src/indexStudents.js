@@ -39,11 +39,17 @@ document.querySelector(".overlay>div>a.Exit").addEventListener("click",function(
 const StudentsListTable = document.querySelector(".students-table");
 const StudentsSheet = document.querySelector(".students-sheet");
 const StudentListTablePosition = document.querySelectorAll("tbody>tr");
-   
-for (let i=0;i<StudentListTablePosition.length;i++)
+
+const StudentListImage = document.querySelectorAll("td>.user-image-circle>img");
+const StudentListName = document.querySelectorAll(".student-data--name");
+const StudentListMail = document.querySelectorAll(".student-data--email");
+StudentsSheet.style.display="none"
+for (let i=0;i<StudentListTablePosition.length;++i)
 {
     StudentListTablePosition[i].addEventListener("click",function(){
-        console.log(document.querySelector(".student-data--name").innerHTML);
+        document.querySelector(".students-sheet--image>img").src=StudentListImage[i].src;
+        document.querySelector(".students-sheet--name>a").innerHTML=StudentListName[i].innerHTML;
+        document.querySelector(".students-sheet--mail>a").innerHTML=StudentListMail[i].innerHTML;
         if(StudentsSheet.style.display=="none")
         {
         StudentsListTable.classList.remove("students-table--full");
@@ -55,5 +61,5 @@ for (let i=0;i<StudentListTablePosition.length;i++)
 /*close students sheet by X*/
 document.querySelector("div.students-sheet>a.Exit").addEventListener("click",function(){
     StudentsSheet.style.display="none";
-    StudentsListTable.classList.toggle("students-table--full")
+    StudentsListTable.classList.add("students-table--full")
 })
