@@ -20,7 +20,18 @@ for (let i=0;i<NavButtons.length;i++) {
     });
 }
 
-/* Overlay for "+ Add new student" Button*/
+/* any text field activation on input*/
+const Inputs = document.querySelectorAll(".input-class");
+for(i=0;i<Inputs.length;i++){
+    Inputs[i].addEventListener("input",function(e){
+       if(!e.currentTarget.value==""){
+           e.currentTarget.classList.add("input-class--active");
+        }else e.currentTarget.classList.remove("input-class--active");
+    }
+);}
+
+/* Overlay for + Add new student" Button*/
+
 const AddStudentOverlay = document.querySelector(".overlay")
 document.getElementById("AddStudentButton").addEventListener("click",function(){
     if(AddStudentOverlay.style.display==="block"){
@@ -61,5 +72,5 @@ for (let i=0;i<StudentListTablePosition.length;++i)
 /*close students sheet by X*/
 document.querySelector("div.students-sheet>a.Exit").addEventListener("click",function(){
     StudentsSheet.style.display="none";
-    StudentsListTable.classList.add("students-table--full")
+    StudentsListTable.classList.add("students-table--full");
 })
