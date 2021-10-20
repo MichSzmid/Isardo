@@ -387,7 +387,7 @@ div.students-sheet{
     font-size:20px;
     font-weight:600;
 }
-.overlay{
+div.overlay{
     position:absolute;
     display:none;
     width:100%;
@@ -396,11 +396,48 @@ div.students-sheet{
     background-color:rgba(0, 0, 0, 0.422);
     backdrop-filter:blur(6px);
 }
+.overlay__add-student{
+    display:block;
+    position:absolute;
+    height:440px;
+    width:560px;
+    background-color:white;
+    left:30vw;
+    transform: translateY(-30%);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.322);
+    border-radius: 24px;
+    top: 20vw;
+    transition:1s;
+}
+.overlay__add-student-text--header{
+    color:rgb(76, 43, 226);
+    font-size:38px;
+    margin:30px 0 0 30px;
+}
+.overlay__add-student-text{
+    display:block;
+    position:relative;
+    float:left;
+    width:100%;
+    margin: 30px 0 10px 20px;
+    font-family:inherit;
+    font-weight: bold;
+}
+.overlay__add-student-input{
+    display:block;
+    position:relative;
+    float:left;
+    margin:0 0 0 5%;
+}
+.overlay__add-student-button{
+    width:90%;
+    margin:12% 5% 0 5%;
+}
 .Exit{
     position:relative;
     float:right;
     text-align: right;
-    margin-right:5%;
+    margin:5% 10% 0 0;
     width:10%;
     font-family:inherit;
     font-size:20px;
