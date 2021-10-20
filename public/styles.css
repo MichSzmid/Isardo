@@ -158,6 +158,13 @@ section.ui-body {
     font-size:42px;
     font-weight: bold;
 }
+.user-image-circle{
+    border-radius:50%;
+    overflow:hidden;
+    width:50px;
+    height:50px;
+    display:block;
+}
 div.navigation>ul>li{
     display:inline;
     float:left;
@@ -203,8 +210,6 @@ div.user-panel{
 .user-panel>.user-panel-icon{
     height:45px;
     width:45px;
-    border-radius:50%;
-    overflow:hidden;
     cursor:pointer;
     text-align: center;
     margin:8px 32px 0 0;
@@ -218,7 +223,6 @@ div.user-panel{
 .user-panel-menu--min>div{
     height:60px;
     width: 60px;
-    border-radius:50%;
     overflow:hidden;
     cursor:pointer;
     text-align: center;
@@ -257,6 +261,15 @@ section.main-ui-section{
 .button-class--addstudent{
     width:220px;
 }
+.input-class--search{
+    float:right;
+    position:relative;
+    right:42%;
+    width:16%;
+    font-weight: 500;
+    margin:0px;
+    text-align:left;
+}
 .students-table{
     position:relative;
     float:left;
@@ -273,14 +286,29 @@ section.main-ui-section{
 .students-table>tbody>tr>td{
     border-bottom: 1px solid #ddd;
     padding: 7px 0 7px 0;
-    width:30%;
+    height:36px;
+}
+.students-table>tbody>tr>td>div{
+    width:30px;
+    height:30px;
+    position:relative;
+    float:right;
+}
+.students-table>tbody>tr>td>div>img{
+    height:180%;
+    display:block;
+    position:relative;
+    top:-20%;
+    overflow: hidden;
 }
 .students-table>tbody>tr>td>a{
     font-size:16px;
-    display:inline-block;
+    font-family: inherit;
+    font-weight:bolder;
+    display:block;
+    position:relative;
     white-space: nowrap;
     overflow: hidden;
-    font-weight:bolder;
     text-overflow:ellipsis;
     user-select:text;
 }
@@ -288,7 +316,7 @@ section.main-ui-section{
     width:80%;
 }
 .student-data--email{
-    width:63%;
+    width:46%;
 }
 .student-data--subject{
     color:rgb(231, 182, 47);
@@ -297,13 +325,12 @@ div.students-sheet{
     float:right;
     width:25%;
     height:70vh;
-    background-color:#f1f1f1;
     border-radius:4%;
+    box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.26);
 }
 .students-sheet-image{
     height:150px;
     width:150px;
-    border-radius:50%;
     margin:0 auto;
     position:relative;
     left:8%;
@@ -340,12 +367,34 @@ div.students-sheet{
     color:rgb(160, 160, 160);
     line-height: 24px;
 }
+.students-sheet--edit{
+    height:20px;
+    width:20px;
+    text-align:justify;
+    float:left;
+    position:relative;
+    left:50%;
+    cursor:pointer;
+    color:rgb(76, 43, 226);
+}
+.students-sheet--edit>img{
+    height:100%;
+}
 .students-sheet__overview{
     height:38%;
     margin:40px 0 0 30px;
     font-family: inherit;
     font-size:20px;
     font-weight:600;
+}
+.overlay{
+    position:absolute;
+    display:none;
+    width:100%;
+    height:100%;
+    top:0;
+    background-color:rgba(0, 0, 0, 0.422);
+    backdrop-filter:blur(6px);
 }
 .Exit{
     position:relative;
