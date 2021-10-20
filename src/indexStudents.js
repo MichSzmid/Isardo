@@ -1,3 +1,4 @@
+/*Navigation bar*/
 const NavButtons = document.querySelectorAll(".navigation-button");
 const NavButtonIndicator =  document.querySelectorAll(".navigation-button__indicator");
 
@@ -18,3 +19,41 @@ for (let i=0;i<NavButtons.length;i++) {
             NavButtonIndicator[i].style.display="none";}
     });
 }
+
+/* Overlay for "+ Add new student" Button*/
+const AddStudentOverlay = document.querySelector(".overlay")
+document.getElementById("AddStudentButton").addEventListener("click",function(){
+    if(AddStudentOverlay.style.display==="block"){
+        AddStudentOverlay.style.display="none";
+    } else AddStudentOverlay.style.display="block"
+    
+});
+/* overlay exit by X*/
+document.querySelector(".overlay>div>a.Exit").addEventListener("click",function(){
+    if(AddStudentOverlay.style.display==="block"){
+        AddStudentOverlay.style.display="none";
+    } else AddStudentOverlay.style.display="block"
+});
+
+/* Students sheet */
+const StudentsListTable = document.querySelector(".students-table");
+const StudentsSheet = document.querySelector(".students-sheet");
+const StudentListTablePosition = document.querySelectorAll("tbody>tr");
+   
+for (let i=0;i<StudentListTablePosition.length;i++)
+{
+    StudentListTablePosition[i].addEventListener("click",function(){
+        console.log(document.querySelector(".student-data--name").innerHTML);
+        if(StudentsSheet.style.display=="none")
+        {
+        StudentsListTable.classList.remove("students-table--full");
+        StudentsSheet.style.display="block";
+        }
+    });
+}
+
+/*close students sheet by X*/
+document.querySelector("div.students-sheet>a.Exit").addEventListener("click",function(){
+    StudentsSheet.style.display="none";
+    StudentsListTable.classList.toggle("students-table--full")
+})

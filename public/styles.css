@@ -5,6 +5,7 @@ body,section,div{
 body{
     background-color:#fefefe;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow:hidden;
 }
 
 section.login-left{
@@ -275,6 +276,11 @@ section.main-ui-section{
     float:left;
     width:60%;
     height:75%;
+    transition: 0.1s;
+}
+.students-table--full{
+    width:100%;
+    transition: 0.1s;
 }
 .students-table>thead>tr>th{
     text-align:left;
@@ -327,6 +333,7 @@ div.students-sheet{
     height:70vh;
     border-radius:4%;
     box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.26);
+    transition:0.2s;
 }
 .students-sheet-image{
     height:150px;
