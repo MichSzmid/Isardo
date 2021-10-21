@@ -254,7 +254,7 @@ div.user-panel{
 .user-panel--max{
     display:block;
     visibility: hidden;
-    margin:0;
+
 }
 .user-panel--max>ul{
     list-style: none;

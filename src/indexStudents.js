@@ -21,10 +21,7 @@ for (let i=0;i<NavButtons.length;i++) {
 }
 /* User Panel*/
 document.querySelector(".user-panel").addEventListener("click",function(){
-    const UserMenu = document.querySelector(".user-panel--max");
-    if(UserMenu.style.visibility=="visible"){
-        UserMenu.style.visibility=="hidden";
-    }else UserMenu.style.visibility=="visible"
+    document.querySelector(".user-panel--max").style.visibility="visible"
 });
 /* any text field activation on input*/
 const Inputs = document.querySelectorAll(".input-class");
