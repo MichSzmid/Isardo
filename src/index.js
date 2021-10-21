@@ -13,15 +13,15 @@ function RegisteredModal(){
 };
 
 LoginForm.addEventListener('input',function(e){
-        if(e.currentTarget.login1Name.value!==""){
+        if(!e.currentTarget.login1Name.value){
         e.currentTarget.login1Name.classList.add("input-class--active");
         e.currentTarget.login1Name.classList.remove('input-class--error')
         }else {e.currentTarget.login1Name.classList.remove("input-class--active")}
-        if(e.currentTarget.login2Last.value!==""){
+        if(!e.currentTarget.login2Last.value){
         e.currentTarget.login2Last.classList.add("input-class--active");
         e.currentTarget.login2Last.classList.remove('input-class--error')
         }else {e.currentTarget.login2Last.classList.remove("input-class--active")}
-        if(e.currentTarget.login3Email.value!==""){
+        if(!e.currentTarget.login3Email.value){
         e.currentTarget.login3Email.classList.add("input-class--active");
         e.currentTarget.login3Email.classList.remove('input-class--error')
         }else {e.currentTarget.login3Email.classList.remove("input-class--active")}
