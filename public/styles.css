@@ -58,10 +58,8 @@ div.login-top a{
     color:grey;
     font-weight:normal;
 }
-.create-account-external{
-    display:flex;
-    width:120%;
-    margin:12px 10px 10px 20px;
+.login-form>H3{
+    margin-top:12px;
     font-size:16px;
     color:grey;
     font-weight:bold;
@@ -135,10 +133,10 @@ div.login-top a{
 .external-account{
     display:inline;
     background-color:none;
-    width:35px;
-    height:35px;
+    width:45px;
+    height:45px;
     float:left;
-    margin-left:20px;
+    margin-right:20px;
     cursor:pointer;
 }
 .external-account>a>img{
@@ -250,16 +248,6 @@ div.user-panel{
     height:auto;
     float:right;
     cursor:pointer;
-}
-.user-panel--max{
-    display:block;
-    visibility: hidden;
-
-}
-.user-panel--max>ul{
-    list-style: none;
-    display:block;
-    width:100%;
 }
 section.main-ui-section{
     position:absolute;
