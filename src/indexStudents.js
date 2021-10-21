@@ -19,7 +19,10 @@ for (let i=0;i<NavButtons.length;i++) {
             NavButtonIndicator[i].style.display="none";}
     });
 }
-
+/* User Panel*/
+document.querySelector(".user-panel").addEventListener("click",function(){
+    document.querySelector(".user-panel--max").style.visibility="visible"
+});
 /* any text field activation on input*/
 const Inputs = document.querySelectorAll(".input-class");
 for(i=0;i<Inputs.length;i++){
