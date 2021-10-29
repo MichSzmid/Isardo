@@ -185,7 +185,7 @@ div.navigation>ul>li{
     color:#656565;
     transition:0.5s;
 }
-.navigation-button--hover{
+.navigation-button:hover{
     color:#8f6fca;
     text-shadow: 1px 1px 10px #afa4c5;
     transition:0.2s;
@@ -260,6 +260,17 @@ div.user-panel{
     list-style: none;
     display:block;
     width:100%;
+}
+.user-panel--max>ul>li{
+    display:block;
+    position:relative;
+    text-align: center;
+    margin: 0 auto;
+    left:-50%;
+}
+.user-panel--max>ul>li:hover{
+    color:rgb(76, 43, 226);
+    text-shadow: 1px 1px 10px #afa4c5;
 }
 section.main-ui-section{
     position:absolute;

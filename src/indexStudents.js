@@ -3,12 +3,6 @@ const NavButtons = document.querySelectorAll(".navigation-button");
 const NavButtonIndicator =  document.querySelectorAll(".navigation-button__indicator");
 
 for (let i=0;i<NavButtons.length;i++) {
-    NavButtons[i].addEventListener("mouseover",function(){
-        NavButtons[i].classList.add("navigation-button--hover");
-    });
-    NavButtons[i].addEventListener("mouseleave",function(){
-        NavButtons[i].classList.remove("navigation-button--hover");
-    });
     NavButtons[i].addEventListener("click",function(){
         if(!NavButtons[i].classList.contains("navigation-button--active")){
         NavButtons[i].classList.add("navigation-button--active");
@@ -76,4 +70,8 @@ for (let i=0;i<StudentListTablePosition.length;++i)
 document.querySelector("div.students-sheet>a.Exit").addEventListener("click",function(){
     StudentsSheet.style.display="none";
     StudentsListTable.classList.add("students-table--full");
+})
+/*User Panel menu*/
+document.querySelector(".user-panel-menu--min").addEventListener("click",function(){
+    document.querySelector(".user-panel--max").style.visibility="visible";
 })
