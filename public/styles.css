@@ -253,8 +253,11 @@ div.user-panel{
 }
 .user-panel--max{
     display:block;
-    visibility: hidden;
-
+    position:absolute;
+    right: -20%;
+    top:80px;
+    z-index:1;
+    transition:0.2s;
 }
 .user-panel--max>ul{
     list-style: none;
@@ -266,12 +269,19 @@ div.user-panel{
     position:relative;
     text-align: center;
     margin: 0 auto;
-    left:-50%;
+    font-size:24px;
+    padding:0 10px 0 10px;
 }
 .user-panel--max>ul>li:hover{
     color:rgb(76, 43, 226);
     text-shadow: 1px 1px 10px #afa4c5;
 }
+.user-panel--max__visible{
+    top:80px;
+    right: 2%;
+    transition:0.2s;
+}
+
 section.main-ui-section{
     position:absolute;
     background:white;
@@ -312,10 +322,21 @@ section.main-ui-section{
     font-weight:bold;
     color:#aaa;
 }
+.students-table>tbody>tr{
+    border-radius: 10%;
+}
+.students-table>tbody>tr:hover{
+    background-color:#FDFDFD;
+    box-shadow: 0 1px 22px rgb(187, 187, 187);
+    border-radius: 10%;
+}
 .students-table>tbody>tr>td{
+    outline:0;
     border-bottom: 1px solid #ddd;
     padding: 7px 0 7px 0;
     height:36px;
+    margin:0;
+    padding:0;
 }
 .students-table>tbody>tr>td>div{
     width:30px;
@@ -466,12 +487,20 @@ div.overlay{
 .Exit{
     position:relative;
     float:right;
-    text-align: right;
+    text-align: center;
     margin:5% 10% 0 0;
-    width:10%;
+    width:25px;
     font-family:inherit;
     font-size:20px;
     font-weight:bolder;
     color:black;
     cursor:pointer;
+    border:1px solid grey;
+    border-radius: 50%;
+    transition: 0.8s;
+}
+.Exit:hover{
+    box-shadow: 0 0 5px 2px rgba(107, 107, 107, 0.2);
+    text-shadow: 1px 1px 2px gray;
+    transition: 0.2s;
 }

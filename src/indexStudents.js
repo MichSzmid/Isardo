@@ -4,18 +4,23 @@ const NavButtonIndicator =  document.querySelectorAll(".navigation-button__indic
 
 for (let i=0;i<NavButtons.length;i++) {
     NavButtons[i].addEventListener("click",function(){
-        if(!NavButtons[i].classList.contains("navigation-button--active")){
-        NavButtons[i].classList.add("navigation-button--active");
-        NavButtons[i+1].classList.remove("navigation-button--active")
-        NavButtonIndicator[i].style.display="block";
-        } else
-            {NavButtons[i].classList.remove("navigation-button--active");
-            NavButtonIndicator[i].style.display="none";}
+        if(NavButtonIndicator[i].style.display=="block")
+        {
+            NavButtons[i].classList.remove("navigation-button--active");
+            NavButtonIndicator[i].style.display="none";
+        }
+        else {
+            NavButtons[i].classList.add("navigation-button--active");
+            NavButtonIndicator[i].style.display="block";
+        };
     });
 }
 /* User Panel*/
-document.querySelector(".user-panel").addEventListener("click",function(){
-    document.querySelector(".user-panel--max").style.visibility="visible"
+const UserPanel = document.querySelector(".user-panel");
+const UserPanelMenu = document.querySelector(".user-panel--max");
+
+UserPanel.addEventListener("click",function(){
+        UserPanelMenu.classList.toggle("user-panel--max__visible");
 });
 /* any text field activation on input*/
 const Inputs = document.querySelectorAll(".input-class");

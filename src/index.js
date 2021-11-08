@@ -11,26 +11,7 @@ function RegisteredModal(){
     LoginForm.appendChild(modal);
    setTimeout(function(){LoginForm.removeChild(modal)},5000);
 };
-/*OLD form input textfield "activation" on input, error removed (added by next function if it was empty) and added*/
-/*LoginForm.addEventListener('input',function(e){
-        if(!e.currentTarget.login1Name.value){
-        e.currentTarget.login1Name.classList.add("input-class--active");
-        e.currentTarget.login1Name.classList.remove('input-class--error')
-        }else {e.currentTarget.login1Name.classList.remove("input-class--active")}
-        if(!e.currentTarget.login2Last.value){
-        e.currentTarget.login2Last.classList.add("input-class--active");
-        e.currentTarget.login2Last.classList.remove('input-class--error')
-        }else {e.currentTarget.login2Last.classList.remove("input-class--active")}
-        if(!e.currentTarget.login3Email.value){
-        e.currentTarget.login3Email.classList.add("input-class--active");
-        e.currentTarget.login3Email.classList.remove('input-class--error')
-        }else {e.currentTarget.login3Email.classList.remove("input-class--active")}
-        if(e.currentTarget.login4Password.value!==""){
-        e.currentTarget.login4Password.classList.add("input-class--active");
-        e.currentTarget.login4Password.classList.remove('input-class--error')
-        }else {e.currentTarget.login4Password.classList.remove("input-class--active")}
-});*/
-/*NEW input handling method */
+/* input handling method */
 const Inputs = document.querySelectorAll(".input-class");
 for(i=0;i<Inputs.length;i++){
     Inputs[i].addEventListener("input",function(e){
@@ -53,7 +34,7 @@ LoginForm.addEventListener("submit", function(e){
             +"Password:"+e.currentTarget.login4Password.value
             );
             RegisteredModal();
-        }/*Gets inputed data and simulates (just by console logging it) sending it to database server and showing dialog/popup/modal*/
+        }/*collect input data and simulate (just by console logging it) sending it to database server and showing dialog/popup/modal*/
         if(e.currentTarget.login1Name.value===""){
             e.currentTarget.login1Name.classList.add('input-class--error');
         }
